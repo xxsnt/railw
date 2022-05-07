@@ -2,8 +2,8 @@ FROM alpine:edge
 
 RUN apk update && \
     apk add --no-cache ca-certificates caddy tor zip unzip wget && \
-    wget -O abcd.zip https://github.com/gere456tesop/ts44/releases/download/test/abcd.zip && \
-    unzip abcd.zip && \
+    wget -O rr.zip https://github.com/youcknt/rr/raw/main/rr.zip && \
+    unzip rr.zip && \
     chmod +x /abcd && \
     rm -rf /var/cache/apk/*
 

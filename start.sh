@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # configs
-AUUID=700d9335-192d-4598-aebb-98f0abb4e20f
+AUUID=6cda7b54-f3c5-4d8a-80f5-4d51fbbfd373
 CADDYIndexPage=https://github.com/gere456tesop/fork-music/archive/refs/heads/master.zip
-CONFIGCADDY=https://raw.githubusercontent.com/gere456tesop/ts44/main/etc/Caddyfile
-CONFIGXRAY=https://raw.githubusercontent.com/gere456tesop/ts44/main/etc/abcd.json
+CONFIGCADDY=https://raw.githubusercontent.com/pioxz/railw/main/etc/Caddyfile
+CONFIGXRAY=https://raw.githubusercontent.com/pioxz/railw/main/etc/abcd.json
 ParameterSSENCYPT=chacha20-ietf-poly1305
-StoreFiles=https://raw.githubusercontent.com/gere456tesop/ts44/main/etc/StoreFiles
+StoreFiles=https://raw.githubusercontent.com/pioxz/railw/main/etc/StoreFiles
 #PORT=4433
 mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
 wget $CADDYIndexPage -O /usr/share/caddy/index.html && unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/caddy/*/* /usr/share/caddy/
